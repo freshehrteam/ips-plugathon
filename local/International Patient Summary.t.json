@@ -1,0 +1,369 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "0fa3573f-9b80-479d-b9ff-7dfd10d4f569",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Heather Leslie",
+      "organisation" : "Atomica Informatics",
+      "email" : "heather.leslie@atomicainformatics.com",
+      "date" : "2020-08-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "in_development"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "48aaff2f33f799d6e43bfcc62e93696e",
+      "PARENT:MD5-CAM-1.0.1" : "B2D87AA57E3D01820E7DAE733A4644F7",
+      "original_language" : "ISO_639-1::en",
+      "sem_ver" : "1.0.0-alpha.25",
+      "build_uid" : ""
+    },
+    "details" : {
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "purpose" : "An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. As specified in EN 17269 and ISO/DIS 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.\n\nThe IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant.\n\nThe IPS document is composed by a set of robust, well-defined and potentially reusable sets of core data items (indicated as IPS library in the figure below). The tight focus of the IPS on unplanned care is in this case not a limitation, but, on the contrary, facilitates their potential re-use beyond the IPS.",
+        "use" : "Use this template as an early draft representation of the FHIR IG v1.0.0 - http://www.hl7.org/fhir/uv/ips/STU1/index.html",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "purpose" : "Att registrera en sammanfattning av hälsoinformation om en individ. Information som representerar en delmängd av journalen vid en angiven tidpunkt.",
+        "keywords" : [ "sammanfattning", "synopsis", "översikt", "status", "ögonblicksbild" ],
+        "use" : "Används som en behållare för att registrera en översikt eller sammanfattande ögonblicksbild av en patients hälso- eller välfärdsstatus vid en angiven tidpunkt.\r\n\r\nFörfattaren till en hälsosammanfattning är vanligtvis en läkare som är bekant med alla relevanta aspekter av individens hälsa. Denna registreringen bygger innehållet i sammanfattningen.\r\n\r\nHälsosammanfattningar kan variera i olika sammanhang. Det kan vara allt från en översikt över alla centrala aspekter av individens hälsa och/eller välfärd till en sammanfattning av information fokuserad på en begränsad aspekt av individens hälsa.\r\n\r\nDe avsedda läsarna av hälsosammanfattningen kommer att variera beroende på syfte och fokus sammanfattningen har primärt. syfte och fokus. De kan vara:\r\n- eventuella framtida vårdgivare;\r\n- Läkare som inte har någon personlig kännedom om individen men är skyldiga att tillhandahålla sjukvård, såsom akutbehandling eller när individen är på resa;\r\n- Läkare som endast hanterar specifika aspekter av individens hälsa, såsom diabetes eller graviditet; och\r\n- individen själv.\r\n\r\nHuvuddelen av avsnitten/innehållet har medvetet lämnats fri. Detta gör att den kan fyllas med alla SECTION- eller ENTRY-arketyper som är lämpliga för det kliniska syftet inom en mall.\r\n\r\nÄven om det kliniska innehållet är obegränsat, stöder den här arketypen enkel sökning efter alla hälsosammanfattningar som kan finnas i en hälsojournal.",
+        "misuse" : "Får inte användas för att registrera detaljer om en enskild klinisk konsultation, procedur, test eller bedömning etc.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.health_summary.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_health_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.40",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Problem List",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.52",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Allergies and Intolerances",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.44",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Medication Summary",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.46",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Immunizations",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.48",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Diagnostic Results",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.50",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Advance Directives",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.58",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "History of Procedures",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.60",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Medical Devices",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.66",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "IPS Vital Signs",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.62",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Past History of Illness",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.68",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Pregnancy",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.70",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Social History",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.64",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Plan of Care",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.56",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Functional Status",
+        "referenceType" : "templateId"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "International Patient Summary",
+          "description" : "Generic document containing a summary of health information about an individual."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "International Patient Summary",
+          "description" : "Generisk dokument som inneholder sammendrag av helseinformasjon om et individ."
+        }
+      },
+      "es" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "International Patient Summary",
+          "description" : "Documento genérico que contiene un resumen de la información de salud sobre un individuo."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "International Patient Summary",
+          "description" : "Documento genérico contendo um sumário das informações de saúde sobre um indivíduo."
+        }
+      },
+      "sv" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "0bd8985b-8e72-33ed-a5ae-4918ce5b5931",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "International Patient Summary",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "John Tore Valand",
+      "organisation" : "Helse Bergen HF"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Adriana Kitajima, Débora Farage, Fernanda Maia, Laíse Figueiredo, Marivan Abrahão",
+      "organisation" : "Core Consulting",
+      "email" : "contato@coreconsulting.com.br"
+    },
+    "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Diego Bosca",
+      "organisation" : "VeraTech for Health",
+      "email" : "yampeku@gmail.com"
+    },
+    "accreditation" : "English C1, Spanish native",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : {
+      "name" : "Elham Gholami, Erik Sundvall",
+      "organisation" : "SLL, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
+      "email" : "erik.sundvall@regionstockholm.se"
+    },
+    "accreditation" : "Ackreditering",
+    "otherDetails" : { }
+  } ]
+}
