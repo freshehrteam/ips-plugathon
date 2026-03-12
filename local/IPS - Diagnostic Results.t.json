@@ -1,0 +1,596 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "272b94c0-75e0-413d-918f-8351ab95ee77",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Ian McNicoll",
+      "organisation" : "freshEHR Clinical Informatics Ltd.",
+      "email" : "ian@freshehr.com",
+      "date" : "2025-02-12"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "in_development"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "sem_ver" : "1.0.0-alpha.3",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "72c2ccbda192ef8b46e9c7fd609e0ab1",
+      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh-cn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh-cn"
+        },
+        "purpose" : "通用的容器类原始型，用于携带需要与他方共享的信息。",
+        "keywords" : [ "报告", "报告单" ],
+        "use" : "当不存在适用于具体报表类型的专用原始型时，作为通用的原始型，用于携带需要与他方共享的信息。\r\n\r\n常见的用例包括：记录对信息请求的响应、检测（检验/检查）结果、已经执行的活动或者已经发生的事件。\r\n\r\n在此故意对其总的章节/内容（Sections/Content）构成要素不加约束。这样，在模板当中，就可以利用任何适合相应临床目的的章节型（SECTION）或条目型（ENTRY）原始型来对其加以填充。",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Arquetipo contenedor genérico para contener información sobre el resultado de una prueba o evaluación.",
+        "keywords" : [ "informe", "prueba", "resultado", "diagnóstico" ],
+        "use" : "Se utiliza como arquetipo genérico para contener información sobre el resultado de una prueba o evaluación independiente, o de un grupo de resultados relacionados.\r\n\r\nSe prevé que cada arquetipo COMPOSITION.report-result contendrá al menos un arquetipo OBSERVATION que contendrá los resultados de la prueba, pero dependiendo de la complejidad de la prueba o evaluación también se pueden incluir otros arquetipos para proporcionar el contexto clínico completo.\r\n\r\nLos casos de uso más comunes son:\r\n- uno o varios resultados de pruebas de patología/laboratorio relacionados con muestras;\r\n- uno o varios resultados de pruebas de diagnóstico por imagen relacionados con el tiempo;\r\n- un resultado de ECG; o\r\n- una evaluación auditiva mediante audiograma.\r\n\r\nEl componente Secciones se ha dejado deliberadamente sin restricciones para maximizar la reutilización de este arquetipo.",
+        "misuse" : "No debe utilizarse para informes que no estén relacionados con el resultado de una prueba o evaluación. Utilícese el COMPOSITION.report genérico o COMPOSITIONs con fines específicos, según proceda.\r\n\r\nNo debe utilizarse para los resultados de pruebas o evaluaciones que se registran como parte de una nota de consulta, por ejemplo la escala de coma de Glasgow en el contexto de una consulta de urgencia; para ello, utilice el arquetipo OBSERVATION.glasgow_coma_scale como un componente dentro de COMPOSITION.encouter.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Arquetip contenidor genèric per transmetre informació sobre el resultat d'una prova o avaluació.",
+        "keywords" : [ "informe", "prova", "resultat", "diagnòstic" ],
+        "use" : "Utilitzar com a arquetip genèric per transmetre informació sobre el resultat d'una prova o d'avaluació o d'un grup de resultats relacionats.\r\n\r\nEs preveu que cada arquetip COMPOSITION.report-result contindrà almenys un arquetip de tipus OBSERVATION que contindrà els resultats de la prova, però depenent de la complexitat de la prova o avaluació també es poden incloure altres arquetips per proporcionar el context clínic complet.\r\n\r\nEls casos d'ús més comuns són els següents:\r\n- un o diversos resultats de proves de patologia/laboratori relacionats amb mostres;\r\n- un o diversos resultats de proves de diagnòstic per imatge relacionats amb el temps;\r\n- un resultat d'ECG; o\r\n- una avaluació auditiva mitjançant audiograma.\r\n\r\nEl component Seccions s'ha deixat sense restriccions deliberadament per maximitzar la reutilització d'aquest arquetip.",
+        "misuse" : "No s'ha d'utilitzar per a informes que no estiguin relacionats amb els resultats d'una prova o avaluació. Utilitzar el COMPOSITION.report genèric o COMPOSITIONs amb fins específics, segons escaigui.\r\n\r\nNo s'ha d'utilitzar per als resultats de proves o avaluacions que es registren com a part d'una nota de consulta, per exemple, l'escala de coma de Glasgow en el context d'una consulta d'urgències - utilitzeu l'arquetip OBSERVATION.glasgow_coma_scale com a component dins de COMPOSITION.encouter.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.report-result.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_report-result.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.0.6",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Diagnostic Results",
+        "referenceType" : "templateId"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000.1",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
+        }
+      },
+      "sl" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
+        }
+      },
+      "en" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Document to communicate information to others about the result of a test or assessment."
+        }
+      },
+      "es-ar" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
+        }
+      },
+      "nb" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Dokument for å formidle informasjon til andre om svaret på en prøve eller undersøkelse."
+        }
+      },
+      "pt-br" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Documento para comunicar informações sobre o resultado de um teste ou avaliação."
+        }
+      },
+      "de" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Das Dokument wird verwendet, um Informationen über das Ergebnis eines Tests oder einer Bewertung zu übermitteln."
+        }
+      },
+      "ko" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "테스트나 평가의 결과에 대해 다른 사람들과 정보를 통신하는 문서."
+        }
+      },
+      "fi" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        }
+      },
+      "it" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        }
+      },
+      "nl" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        }
+      },
+      "sv" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        }
+      },
+      "zh" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1.1",
+          "text" : "IPS - Diagnostic Results",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        }
+      },
+      "ca" : { },
+      "zh-cn" : { },
+      "es" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Informe",
+          "description" : "Documento para comunicar información con otros, generalmente en respuesta a una solicitud de otra parte."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificación del informe",
+          "description" : "Información identificativa sobre el informe."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "Estado del informe completo. Nota: Este no es el estado de cualquiera de los componentes del informe."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensión",
+          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
+          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "e59733fe-625f-3f27-8797-b26c7fc53c5d",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "IPS - Diagnostic Results",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh-cn"
+    },
+    "author" : {
+      "name" : "Lin Zhang",
+      "organisation" : "Freelancer",
+      "email" : "linforest@163.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : {
+      "other_contributors" : "TRADCREA"
+    }
+  } ]
+}
