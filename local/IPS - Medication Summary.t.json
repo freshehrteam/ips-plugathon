@@ -1,0 +1,359 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "5b0ab0f4-3c64-4b87-8f09-f108eb86597d",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Ian McNicoll",
+      "organisation" : "freshEHR Clinical Informatics Ltd.",
+      "email" : "ian@freshehr.com",
+      "date" : "2025-02-12"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "in_development"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "sem_ver" : "1.0.0-alpha.3",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "c84646a393837b819948e49c6cb4b362",
+      "PARENT:MD5-CAM-1.0.1" : "E31F1B770728AFFC60431DA7D907EDA0"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "purpose" : "Documentar uma lista persistente e gerenciada de medicamentos para um indivíduo ou, alternativamente, declarações explícitas sobre exclusões conhecidas ou ausência de qualquer informação sobre medicamentos; todos os quais podem influenciar a tomada de decisão clínica e a prestação de cuidados.",
+        "keywords" : [ "*medication(en)", "*medicine(en)", "*list(en)", "*drug(en)", "*current(en)", "*prescription(en)" ],
+        "use" : "Use para documentar uma lista persistente e gerenciada de medicamentos para um indivíduo, potencialmente incluindo todos os medicamentos prescritos, os 'sem receita', suplementos ou remédios naturais. Como alternativa, pode conter declarações explícitas sobre exclusões conhecidas ou ausência de informações sobre medicamentos.\r\n\r\nA intenção desse arquétipo é ser um \"container\" genérico para qualquer lista de medicamentos, que pode ter um contexto específico ou limitação de escopo definido num template. Essa lista pode ser utilizada como uma fonte de dados de medicamentos para uma lista de medicamentos ativos em um sistema clínico, para transição de cuidados, troca de dados ou como base para suporte à decisão.\r\n\r\nMais comumente, esta lista será composta por quatro tipos de arquétipos:\r\n- declarações de medicamentos em uso, que são registradas nos arquétipos INSTRUCTION.medication_order e / ou ACTION.medication; OU\r\n- declaração sobre a exclusão geral do uso de medicamentos, que pode ser registrada usando o arquétipo EVALUATION.exclusion_global - por exemplo: \"Não está tomando nenhum medicamento no momento\"; OU\r\n- declaração sobre a exclusão do uso de um medicamento específico, que pode ser registrada usando o arquétipo EVALUATION.exclusion_specific - por exemplo: \"Atualmente não está tomando penicilina\"; OU\r\n- declaração sobre nenhuma informação estar disponível - nem uso conhecido de medicação nem uma exclusão de uso - pode ser registrada usando o arquétipo EVALUATION.absence.\r\n\r\nPara que uma lista de medicamentos seja precisa e segura para uso como base para atividades de apoio à decisão e para troca, esta lista de medicamentos deve, idealmente, ser curada por um médico responsável pelo registro de saúde, em vez de gerenciada automaticamente pelo sistema clínico somente por meio de regras de negócios.\r\n\r\nPode haver uma diferença sutil, mas importante, entre os tipos de listas de medicamentos. Alguns exemplos incluem: 'Medicação Atual' ou 'Medicação Regular'. Uma 'lista atual de medicamentos' pode ser considerada como uma lista de todos os medicamentos que o indivíduo teria em seu corpo em um determinado momento, incluindo quaisquer doses \"agora\" ou \"se necessário\" de um medicamento que devem ser consideradas ao prescrever para garantir que a verificação contínua da interação medicamento-medicamento aconteça durante a duração do(s) seu(s) efeito(s) fisiológico(s). Uma lista de 'Medicamentos Regulares' pode incluir apenas aqueles medicamentos que são tomados pelo indivíduo de forma regular e contínua.\r\n\r\nAlém disso, é comum na prática clínica criar Listas de Medicamentos com restrições temporais, incluindo 'Lista de Medicamentos de Admissão' e 'Lista de Medicamentos de Alta', que serão relevantes apenas em um determinado momento. Outros exemplos incluem 'Medicamentos anteriores' ou 'Medicamentos inativos'. Esta será, em última análise, uma decisão de implementação para cada sistema clínico - uma abordagem alternativa pode ser registrar esses conceitos contextuais clínicos como resultado de uma consulta ou o uso de um arquétipo COMPOSITION diferente, ainda a ser determinado.\r\n\r\nEsse arquétipo deve ser representado e gerenciado como uma lista persistente; no entanto, existem situações em que a lista pode ser usada no atendimento episódico e requer atributos adicionais, como contexto, etc., para permitir um registro preciso. O modelo de referência openEHR atualmente permite apenas que o contexto seja registrado nos arquétipos COMPOSITION baseados em eventos. Como resultado, este arquétipo foi modelado como um Evento, ao invés de uma COMPOSITION Persistente, para permitir flexibilidade para que alguns sistemas clínicos possam gerenciar com segurança as listas de Medicamentos para episódios de cuidados, enquanto outros escolherão implementar esta COMPOSITION para representar de uma maneira persistente.",
+        "misuse" : "*Not to be used to record lists of Medications that are not intended for persistence and ongoing revision and curation.\r\n\r\nNot to be used to record individual Prescriptions - use COMPOSITION.prescription for this purpose.\r\n\r\nNot to be used to record actual changes to therapy, including dose changes, new medicines and ceased medications. Each order will be recorded using individual instances of the INSTRUCTION.medication_order archetype, and only the latest one should be represented within the latest version of this COMPOSITION.\r\n\r\nNot to be used to record vaccinations administered - use COMPOSITION.immunisation_list for this purpose.(en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "el" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "el"
+        },
+        "purpose" : "Για την καταγραφή ενός επίμονου και διαχειριζόμενου καταλόγου φαρμάκων για ένα άτομο ή, εναλλακτικά, θετικών και ρητών δηλώσεων σχετικά με γνωστές εξαιρέσεις ή πραγματική απουσία οποιασδήποτε πληροφορίας σχετικά με τα φάρμακα. Όλα αυτά μπορούν να επηρεάσουν τη λήψη κλινικών αποφάσεων και την παροχή φροντίδας.",
+        "keywords" : [ "φάρμακο", "ιατρική", "λίστα", "ναρκωτικό", "τρέχων", "συνταγή" ],
+        "use" : "*Use to record a persistent and managed list of medicines for an individual, potentially including all prescribed and 'over the counter' medicines, supplements or natural remedies. Alternatively, it may contain positive and explicit statements about known exclusions or absence of information about medications.\r\n\r\nThe intent of this archetype is to be a generic container for any Medication list, which may have a specific context or limitation of scope set within a template. This list can be utilised as a source of medicines data for an active current medication list within a clinical system, for transition of care, data exchange, or as the basis for decision support. \r\n\r\nMost commonly, this list will be comprised of three types of archetype:\r\n- statements about the positive use of medications are recorded using the INSTRUCTION.medication_order and/or ACTION.medication archetypes; OR\r\n- a positive statement about the general exclusion of medication use can be recorded using the general EVALUATION.exclusion_global archetype - for example: \"Not currently taking any medications\"; OR\r\n- a positive statement about the exclusion of use of a specific medication can be recorded using the EVALUATION.exclusion_specific archetype - for example: \"Not currently taking penicillin\"\r\n- a positive statement about no information being available - neither a positive known use of medication nor a positive exclusion - can be recorded using the EVALUATION.absence archetype.\r\n\r\nIn order for a Medication list to be accurate and safe to use as the basis for decision support activities and for exchange, this Medication list should ideally be curated by a clinician responsible for the health record, rather than managed automatically by the clinical system through business rules alone.\r\n\r\nThere can be a subtle but important difference between types of medication lists. Some examples include: 'Current Medication' or 'Regular Medication'. A 'Current medication list' may be regarded as a list of all medicines that the individual would have in their body at a given time, including any stat or prn doses of a medicine that should be considered when prescribing to ensure that drug-drug interaction checking continues for the duration of its physiological effect. A 'Regular Medication' list may only include those medicines that are taken by the individual on a regular and ongoing basis. \r\n\r\nIn addition, it is common in clinical practice to create Medication Lists that have temporal constraints, including 'Admission Medication List' and 'Discharge Medication List', which will be relevant only at a specified point in time. Other examples include 'Past Medications' or 'Inactive Medications'. This will ultimately be an implementation decision for each clinical system - an alternative approach may be to record these contextual clinical constructs as the result of a query or use of a different COMPOSITION archetype, yet to be determined.\r\n\r\nThis archetype is intended to be represented and managed as a persistent list, however there are situations where the list may be used within episodic care and require additional attributes such as context etc to enable accurate recording. The openEHR reference model currently only allows context to be recorded within Event-based COMPOSITION archetypes. As a result, this archetype has been modelled as an Event, rather than Persistent, COMPOSITION, to allow for flexibility so that some clinical systems can safely manage Medication lists for episodes of care, while others will choose to implement this COMPOSITION to act in a persistent manner.(en)",
+        "misuse" : "*Not to be used to record lists of Medications that are not intended for persistence and ongoing revision and curation.\r\n\r\nNot to be used to record individual Prescriptions - use COMPOSITION.prescription for this purpose.\r\n\r\nNot to be used to record actual changes to therapy, including dose changes, new medicines and ceased medications. Each order will be recorded using individual instances of the INSTRUCTION.medication_order archetype, and only the latest one should be represented within the latest version of this COMPOSITION.\r\n\r\nNot to be used to record vaccinations administered - use COMPOSITION.immunisation_list for this purpose.(en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.medication_list.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_medication_list.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.6",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Medication Summary",
+        "referenceType" : "templateId"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "A persistent and versioned list of medicines for an individual."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "*A persistent and versioned list of medicines for an individual.(en)"
+        }
+      },
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "*A persistent and versioned list of medicines for an individual.(en)"
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "En varig (persistent) og oppdatert liste over individets legemidler."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "Eine beständige und versionierte Liste von Medikamenten für eine Person."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "En varaktig (persistent) och uppdaterad lista över individens läkemedel."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "IPS - Medication Summary",
+          "description" : "Een persistente en beheerde lijst van medicijnen gebruikt door een individu."
+        }
+      },
+      "el" : { },
+      "pt-br" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "6b4865bf-9ada-32e7-8b89-90eb3a9018b8",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "IPS - Medication Summary",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Vladimir Pizzo",
+      "organisation" : "Royal Philips",
+      "email" : "vrppizzo@gmail.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "el"
+    },
+    "author" : {
+      "name" : "Erasmia Partafylla",
+      "organisation" : "Sigmasoft",
+      "email" : "c.partafylla@sigmasoft.gr"
+    },
+    "otherDetails" : { }
+  } ]
+}
