@@ -90,7 +90,7 @@
           "id" : "substance",
           "name" : "Substance",
           "localizedName" : "Substance",
-          "rmType" : "DV_CODED_TEXT",
+          "rmType" : "DV_TEXT",
           "nodeId" : "at0002",
           "min" : 1,
           "max" : 1,
@@ -105,13 +105,7 @@
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Allergies and Intolerances']/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v2]/data[at0001]/items[at0002]/value",
           "inputs" : [ {
-            "suffix" : "code",
-            "type" : "TEXT",
-            "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergies-intolerances-uv-ips"
-          }, {
-            "suffix" : "value",
-            "type" : "TEXT",
-            "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergies-intolerances-uv-ips"
+            "type" : "TEXT"
           } ]
         }, {
           "id" : "active_inactive_status",
@@ -249,7 +243,7 @@
             "id" : "manifestation",
             "name" : "Manifestation",
             "localizedName" : "Manifestation",
-            "rmType" : "DV_CODED_TEXT",
+            "rmType" : "DV_TEXT",
             "nodeId" : "at0006",
             "min" : 1,
             "max" : -1,
@@ -264,13 +258,7 @@
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Allergies and Intolerances']/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v2]/data[at0001]/items[openEHR-EHR-CLUSTER.adverse_reaction_event.v1]/items[at0006]/value",
             "inputs" : [ {
-              "suffix" : "code",
-              "type" : "TEXT",
-              "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"
-            }, {
-              "suffix" : "value",
-              "type" : "TEXT",
-              "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"
+              "type" : "TEXT"
             } ]
           } ]
         }, {

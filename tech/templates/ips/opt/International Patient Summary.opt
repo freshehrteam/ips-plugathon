@@ -20,7 +20,7 @@
         <other_details id="MD5-CAM-1.0.1">040b15d026a548996bbe88c52e891019</other_details>
         <other_details id="PARENT:MD5-CAM-1.0.1">B2D87AA57E3D01820E7DAE733A4644F7</other_details>
         <other_details id="original_language">ISO_639-1::en</other_details>
-        <other_details id="sem_ver">1.1.0-alpha.26</other_details>
+        <other_details id="sem_ver">1.2.0-alpha.26</other_details>
         <other_details id="build_uid"></other_details>
         <details>
             <language>
@@ -318,31 +318,6 @@ The IPS document is composed by a set of robust, well-defined and potentially re
                                                     <upper>1</upper>
                                                 </occurrences>
                                                 <node_id></node_id>
-                                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                                    <rm_attribute_name>defining_code</rm_attribute_name>
-                                                    <existence>
-                                                        <lower_included>true</lower_included>
-                                                        <upper_included>true</upper_included>
-                                                        <lower_unbounded>false</lower_unbounded>
-                                                        <upper_unbounded>false</upper_unbounded>
-                                                        <lower>1</lower>
-                                                        <upper>1</upper>
-                                                    </existence>
-                                                    <match_negated>false</match_negated>
-                                                    <children xsi:type="C_CODE_REFERENCE">
-                                                        <rm_type_name>CODE_PHRASE</rm_type_name>
-                                                        <occurrences>
-                                                            <lower_included>true</lower_included>
-                                                            <upper_included>true</upper_included>
-                                                            <lower_unbounded>false</lower_unbounded>
-                                                            <upper_unbounded>false</upper_unbounded>
-                                                            <lower>0</lower>
-                                                            <upper>1</upper>
-                                                        </occurrences>
-                                                        <node_id></node_id>
-                                                        <referenceSetUri>terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/problems-uv-ips</referenceSetUri>
-                                                    </children>
-                                                </attributes>
                                             </children>
                                         </attributes>
                                     </children>
@@ -368,7 +343,7 @@ The IPS document is composed by a set of robust, well-defined and potentially re
                                             </existence>
                                             <match_negated>false</match_negated>
                                             <children xsi:type="C_COMPLEX_OBJECT">
-                                                <rm_type_name>DV_CODED_TEXT</rm_type_name>
+                                                <rm_type_name>DV_TEXT</rm_type_name>
                                                 <occurrences>
                                                     <lower_included>true</lower_included>
                                                     <upper_included>true</upper_included>
@@ -378,31 +353,6 @@ The IPS document is composed by a set of robust, well-defined and potentially re
                                                     <upper>1</upper>
                                                 </occurrences>
                                                 <node_id></node_id>
-                                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                                    <rm_attribute_name>defining_code</rm_attribute_name>
-                                                    <existence>
-                                                        <lower_included>true</lower_included>
-                                                        <upper_included>true</upper_included>
-                                                        <lower_unbounded>false</lower_unbounded>
-                                                        <upper_unbounded>false</upper_unbounded>
-                                                        <lower>1</lower>
-                                                        <upper>1</upper>
-                                                    </existence>
-                                                    <match_negated>false</match_negated>
-                                                    <children xsi:type="C_CODE_REFERENCE">
-                                                        <rm_type_name>CODE_PHRASE</rm_type_name>
-                                                        <occurrences>
-                                                            <lower_included>true</lower_included>
-                                                            <upper_included>true</upper_included>
-                                                            <lower_unbounded>false</lower_unbounded>
-                                                            <upper_unbounded>false</upper_unbounded>
-                                                            <lower>0</lower>
-                                                            <upper>1</upper>
-                                                        </occurrences>
-                                                        <node_id></node_id>
-                                                        <referenceSetUri>terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/body-site</referenceSetUri>
-                                                    </children>
-                                                </attributes>
                                             </children>
                                         </attributes>
                                     </children>
@@ -1533,7 +1483,7 @@ This element is meant to allow for multiple types of impact, including but not l
                                             </existence>
                                             <match_negated>false</match_negated>
                                             <children xsi:type="C_COMPLEX_OBJECT">
-                                                <rm_type_name>DV_CODED_TEXT</rm_type_name>
+                                                <rm_type_name>DV_TEXT</rm_type_name>
                                                 <occurrences>
                                                     <lower_included>true</lower_included>
                                                     <upper_included>true</upper_included>
@@ -1543,31 +1493,6 @@ This element is meant to allow for multiple types of impact, including but not l
                                                     <upper>1</upper>
                                                 </occurrences>
                                                 <node_id></node_id>
-                                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                                    <rm_attribute_name>defining_code</rm_attribute_name>
-                                                    <existence>
-                                                        <lower_included>true</lower_included>
-                                                        <upper_included>true</upper_included>
-                                                        <lower_unbounded>false</lower_unbounded>
-                                                        <upper_unbounded>false</upper_unbounded>
-                                                        <lower>1</lower>
-                                                        <upper>1</upper>
-                                                    </existence>
-                                                    <match_negated>false</match_negated>
-                                                    <children xsi:type="C_CODE_REFERENCE">
-                                                        <rm_type_name>CODE_PHRASE</rm_type_name>
-                                                        <occurrences>
-                                                            <lower_included>true</lower_included>
-                                                            <upper_included>true</upper_included>
-                                                            <lower_unbounded>false</lower_unbounded>
-                                                            <upper_unbounded>false</upper_unbounded>
-                                                            <lower>0</lower>
-                                                            <upper>1</upper>
-                                                        </occurrences>
-                                                        <node_id></node_id>
-                                                        <referenceSetUri>terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergies-intolerances-uv-ips</referenceSetUri>
-                                                    </children>
-                                                </attributes>
                                             </children>
                                         </attributes>
                                     </children>
@@ -1805,7 +1730,7 @@ This element is meant to allow for multiple types of impact, including but not l
                                                     </existence>
                                                     <match_negated>false</match_negated>
                                                     <children xsi:type="C_COMPLEX_OBJECT">
-                                                        <rm_type_name>DV_CODED_TEXT</rm_type_name>
+                                                        <rm_type_name>DV_TEXT</rm_type_name>
                                                         <occurrences>
                                                             <lower_included>true</lower_included>
                                                             <upper_included>true</upper_included>
@@ -1815,31 +1740,6 @@ This element is meant to allow for multiple types of impact, including but not l
                                                             <upper>1</upper>
                                                         </occurrences>
                                                         <node_id></node_id>
-                                                        <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                                            <rm_attribute_name>defining_code</rm_attribute_name>
-                                                            <existence>
-                                                                <lower_included>true</lower_included>
-                                                                <upper_included>true</upper_included>
-                                                                <lower_unbounded>false</lower_unbounded>
-                                                                <upper_unbounded>false</upper_unbounded>
-                                                                <lower>1</lower>
-                                                                <upper>1</upper>
-                                                            </existence>
-                                                            <match_negated>false</match_negated>
-                                                            <children xsi:type="C_CODE_REFERENCE">
-                                                                <rm_type_name>CODE_PHRASE</rm_type_name>
-                                                                <occurrences>
-                                                                    <lower_included>true</lower_included>
-                                                                    <upper_included>true</upper_included>
-                                                                    <lower_unbounded>false</lower_unbounded>
-                                                                    <upper_unbounded>false</upper_unbounded>
-                                                                    <lower>0</lower>
-                                                                    <upper>1</upper>
-                                                                </occurrences>
-                                                                <node_id></node_id>
-                                                                <referenceSetUri>terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips</referenceSetUri>
-                                                            </children>
-                                                        </attributes>
                                                     </children>
                                                 </attributes>
                                             </children>

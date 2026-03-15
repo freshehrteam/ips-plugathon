@@ -106,18 +106,16 @@
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Problem List']/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0002]/value",
           "inputs" : [ {
             "suffix" : "code",
-            "type" : "TEXT",
-            "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/problems-uv-ips"
+            "type" : "TEXT"
           }, {
             "suffix" : "value",
-            "type" : "TEXT",
-            "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/problems-uv-ips"
+            "type" : "TEXT"
           } ]
         }, {
           "id" : "body_site",
           "name" : "Body site",
           "localizedName" : "Body site",
-          "rmType" : "DV_CODED_TEXT",
+          "rmType" : "DV_TEXT",
           "nodeId" : "at0012",
           "min" : 0,
           "max" : -1,
@@ -132,13 +130,7 @@
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Problem List']/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0012]/value",
           "inputs" : [ {
-            "suffix" : "code",
-            "type" : "TEXT",
-            "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/body-site"
-          }, {
-            "suffix" : "value",
-            "type" : "TEXT",
-            "terminology" : "//fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/body-site"
+            "type" : "TEXT"
           } ]
         }, {
           "id" : "date_time_of_onset",
