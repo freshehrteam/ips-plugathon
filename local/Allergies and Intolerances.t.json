@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8b9fc0868dfa71d75f0ad3364db4f5cd",
+      "MD5-CAM-1.0.1" : "4fb572e0688e0a31d6490527d6725b9c",
       "PARENT:MD5-CAM-1.0.1" : "03778F98B6DF455040F12E3E2F1BF4A9",
       "sem_ver" : "1.0.0-alpha.20",
       "build_uid" : ""
@@ -1160,30 +1160,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "Allergies & Intolerances - IPS"
-                      },
-                      "constraint" : [ "ac0.15" ],
-                      "selectedTerminologies" : [ "Allergies & Intolerances - IPS" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -1522,9 +1499,6 @@
       "termBindings" : {
         "AllergyIntoleranceCriticality" : {
           "ac0.3" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"
-        },
-        "Allergies & Intolerances - IPS" : {
-          "ac0.15" : "terminology://fhir.hl7.org/ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/allergies-intolerances-uv-ips"
         }
       },
       "terminologyExtracts" : { },
@@ -1866,30 +1840,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "1..*",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "Allergy Reaction - IPS"
-                  },
-                  "constraint" : [ "ac0.3" ],
-                  "selectedTerminologies" : [ "Allergy Reaction - IPS" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1903,32 +1854,14 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0008.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0009.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DURATION",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1965,71 +1898,18 @@
           } ],
           "attributeTuples" : [ ]
         }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0014.1",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.media_file(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v2|openEHR-EHR-CLUSTER\\.symptom_sign(-[a-zA-Z0-9_]+)*\\.v2|openEHR-EHR-CLUSTER\\.ctcae(-[a-zA-Z0-9_]+)*\\.v1/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.anatomical_location(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.media_file(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v2|openEHR-EHR-CLUSTER\\.symptom_sign(-[a-zA-Z0-9_]+)*\\.v2|openEHR-EHR-CLUSTER\\.ctcae(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0015.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0016.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DURATION",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -2045,41 +1925,6 @@
           "nodeId" : "at0018.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0019.1",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.citation(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.citation(-[a-zA-Z0-9_]+)*\\.v0/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.citation(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.citation(-[a-zA-Z0-9_]+)*\\.v0/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
