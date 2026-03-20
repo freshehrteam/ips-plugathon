@@ -22,9 +22,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "sem_ver" : "1.0.0-alpha.7",
+      "sem_ver" : "1.1.0-alpha.7",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e9091d8573eb4991b75f9eb005e19684",
+      "MD5-CAM-1.0.1" : "f4eba4c6092b4beda12e7238ae8265a4",
       "PARENT:MD5-CAM-1.0.1" : "5CB43F1053E560A1369B271C90DFC20B"
     },
     "details" : {
@@ -128,7 +128,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "IPS - Allergies and Intolerances",
+          "text" : "Allergies and Intolerances",
           "description" : "A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."
         }
       },
