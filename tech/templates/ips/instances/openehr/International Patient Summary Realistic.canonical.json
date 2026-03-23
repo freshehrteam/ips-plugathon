@@ -6,7 +6,7 @@
     },
     "uid": {
         "_type": "OBJECT_VERSION_ID",
-        "value": "b3fbe4e1-8985-462f-a7a2-4a14eba7f31b::7815d0e1-7902-453c-835a-f2a57c5dfe57::1"
+        "value": "9ff62a09-bd21-412a-9d53-71163bd023be::7815d0e1-7902-453c-835a-f2a57c5dfe57::1"
     },
     "archetype_details": {
         "_type": "ARCHETYPED",
@@ -137,31 +137,9 @@
                                 "scheme": "Practitioner"
                             },
                             "namespace": "http://hl7.org/fhir",
-                            "type": "ANY"
+                            "type": "PARTY"
                         },
                         "name": "Dr. Mark Antonio"
-                    },
-                    "protocol": {
-                        "_type": "ITEM_TREE",
-                        "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Tree"
-                        },
-                        "archetype_node_id": "at0032",
-                        "items": [
-                            {
-                                "_type": "ELEMENT",
-                                "name": {
-                                    "_type": "DV_TEXT",
-                                    "value": "Last updated"
-                                },
-                                "archetype_node_id": "at0070",
-                                "value": {
-                                    "_type": "DV_DATE_TIME",
-                                    "value": "2026-03-15T15:09:46.572Z"
-                                }
-                            }
-                        ]
                     },
                     "data": {
                         "_type": "ITEM_TREE",
@@ -257,7 +235,7 @@
                                             "_type": "TERMINOLOGY_ID",
                                             "value": "local"
                                         },
-                                        "code_string": "at0074"
+                                        "code_string": "at0076"
                                     }
                                 }
                             }
@@ -312,31 +290,9 @@
                                 "scheme": "Practitioner"
                             },
                             "namespace": "http://hl7.org/fhir",
-                            "type": "ANY"
+                            "type": "PARTY"
                         },
                         "name": "Dr. Mark Antonio"
-                    },
-                    "protocol": {
-                        "_type": "ITEM_TREE",
-                        "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Tree"
-                        },
-                        "archetype_node_id": "at0032",
-                        "items": [
-                            {
-                                "_type": "ELEMENT",
-                                "name": {
-                                    "_type": "DV_TEXT",
-                                    "value": "Last updated"
-                                },
-                                "archetype_node_id": "at0070",
-                                "value": {
-                                    "_type": "DV_DATE_TIME",
-                                    "value": "2026-03-15T15:09:46.572Z"
-                                }
-                            }
-                        ]
                     },
                     "data": {
                         "_type": "ITEM_TREE",
@@ -432,7 +388,7 @@
                                             "_type": "TERMINOLOGY_ID",
                                             "value": "local"
                                         },
-                                        "code_string": "at0074"
+                                        "code_string": "at0076"
                                     }
                                 }
                             }
@@ -505,7 +461,7 @@
                                 "scheme": "Practitioner"
                             },
                             "namespace": "http://hl7.org/fhir",
-                            "type": "ANY"
+                            "type": "PARTY"
                         },
                         "name": "Dr. Mark Antonio"
                     },
@@ -589,18 +545,6 @@
                                         },
                                         "code_string": "at0065"
                                     }
-                                }
-                            },
-                            {
-                                "_type": "ELEMENT",
-                                "name": {
-                                    "_type": "DV_TEXT",
-                                    "value": "Onset of last reaction"
-                                },
-                                "archetype_node_id": "at0117",
-                                "value": {
-                                    "_type": "DV_DATE_TIME",
-                                    "value": "2003-03-15T15:09:46.577Z"
                                 }
                             },
                             {
@@ -758,18 +702,6 @@
                                         },
                                         "code_string": "at0064"
                                     }
-                                }
-                            },
-                            {
-                                "_type": "ELEMENT",
-                                "name": {
-                                    "_type": "DV_TEXT",
-                                    "value": "Onset of last reaction"
-                                },
-                                "archetype_node_id": "at0117",
-                                "value": {
-                                    "_type": "DV_DATE_TIME",
-                                    "value": "2026-03-15T15:09:46.577Z"
                                 }
                             },
                             {
