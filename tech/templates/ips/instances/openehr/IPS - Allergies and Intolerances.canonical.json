@@ -1,0 +1,427 @@
+{
+    "_type": "COMPOSITION",
+    "name": {
+        "_type": "DV_TEXT",
+        "value": "Allergies and Intolerances"
+    },
+    "uid": {
+        "_type": "OBJECT_VERSION_ID",
+        "value": "e3a2a8d9-45db-4104-83ea-58161be59769::7815d0e1-7902-453c-835a-f2a57c5dfe57::1"
+    },
+    "archetype_details": {
+        "_type": "ARCHETYPED",
+        "archetype_id": {
+            "_type": "ARCHETYPE_ID",
+            "value": "openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
+        },
+        "template_id": {
+            "_type": "TEMPLATE_ID",
+            "value": "IPS - Allergies and Intolerances"
+        },
+        "rm_version": "1.1.0"
+    },
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.adverse_reaction_list.v1",
+    "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_639-1"
+        },
+        "code_string": "en"
+    },
+    "territory": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+            "_type": "TERMINOLOGY_ID",
+            "value": "ISO_3166-1"
+        },
+        "code_string": "GB"
+    },
+    "category": {
+        "_type": "DV_CODED_TEXT",
+        "value": "event",
+        "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+                "_type": "TERMINOLOGY_ID",
+                "value": "openehr"
+            },
+            "code_string": "433"
+        }
+    },
+    "composer": {
+        "_type": "PARTY_IDENTIFIED",
+        "name": "openEHR_7815d0e1-7902-453c-835a-f2a57c5dfe57"
+    },
+    "context": {
+        "_type": "EVENT_CONTEXT",
+        "start_time": {
+            "_type": "DV_DATE_TIME",
+            "value": "2026-03-23T09:04:04.252Z"
+        },
+        "setting": {
+            "_type": "DV_CODED_TEXT",
+            "value": "other care",
+            "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "openehr"
+                },
+                "code_string": "238"
+            }
+        }
+    },
+    "content": [
+        {
+            "_type": "SECTION",
+            "name": {
+                "_type": "DV_TEXT",
+                "value": "Allergies and Intolerances"
+            },
+            "archetype_details": {
+                "_type": "ARCHETYPED",
+                "archetype_id": {
+                    "_type": "ARCHETYPE_ID",
+                    "value": "openEHR-EHR-SECTION.adhoc.v1"
+                },
+                "rm_version": "1.1.0"
+            },
+            "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1",
+            "items": [
+                {
+                    "_type": "EVALUATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Adverse reaction risk"
+                    },
+                    "uid": {
+                        "_type": "HIER_OBJECT_ID",
+                        "value": "19747c9d-4d82-424f-a996-ff121602135f"
+                    },
+                    "archetype_details": {
+                        "_type": "ARCHETYPED",
+                        "archetype_id": {
+                            "_type": "ARCHETYPE_ID",
+                            "value": "openEHR-EHR-EVALUATION.adverse_reaction_risk.v2"
+                        },
+                        "rm_version": "1.1.0"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.adverse_reaction_risk.v2",
+                    "language": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "provider": {
+                        "_type": "PARTY_IDENTIFIED",
+                        "external_ref": {
+                            "_type": "PARTY_REF",
+                            "id": {
+                                "_type": "GENERIC_ID",
+                                "value": "eumfh-39-07",
+                                "scheme": "Practitioner"
+                            },
+                            "namespace": "http://hl7.org/fhir",
+                            "type": "ANY"
+                        },
+                        "name": "Dr. Mark Antonio"
+                    },
+                    "data": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Tree"
+                        },
+                        "archetype_node_id": "at0001",
+                        "items": [
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Substance"
+                                },
+                                "archetype_node_id": "at0002",
+                                "value": {
+                                    "_type": "DV_CODED_TEXT",
+                                    "value": "Penicillin",
+                                    "mappings": [
+                                        {
+                                            "_type": "TERM_MAPPING",
+                                            "match": "=",
+                                            "target": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "http://www.whocc.no/atc"
+                                                },
+                                                "code_string": "J01CA"
+                                            }
+                                        }
+                                    ],
+                                    "defining_code": {
+                                        "_type": "CODE_PHRASE",
+                                        "terminology_id": {
+                                            "_type": "TERMINOLOGY_ID",
+                                            "value": "http://snomed.info/sct"
+                                        },
+                                        "code_string": "764146007"
+                                    }
+                                }
+                            },
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Active/inactive status"
+                                },
+                                "archetype_node_id": "at0130",
+                                "value": {
+                                    "_type": "DV_CODED_TEXT",
+                                    "value": "Active",
+                                    "defining_code": {
+                                        "_type": "CODE_PHRASE",
+                                        "terminology_id": {
+                                            "_type": "TERMINOLOGY_ID",
+                                            "value": "local"
+                                        },
+                                        "code_string": "at0131"
+                                    }
+                                }
+                            },
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Verification status"
+                                },
+                                "archetype_node_id": "at0063",
+                                "value": {
+                                    "_type": "DV_CODED_TEXT",
+                                    "value": "Confirmed",
+                                    "defining_code": {
+                                        "_type": "CODE_PHRASE",
+                                        "terminology_id": {
+                                            "_type": "TERMINOLOGY_ID",
+                                            "value": "local"
+                                        },
+                                        "code_string": "at0065"
+                                    }
+                                }
+                            },
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Adverse reaction event"
+                                },
+                                "archetype_details": {
+                                    "_type": "ARCHETYPED",
+                                    "archetype_id": {
+                                        "_type": "ARCHETYPE_ID",
+                                        "value": "openEHR-EHR-CLUSTER.adverse_reaction_event.v1"
+                                    },
+                                    "rm_version": "1.1.0"
+                                },
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.adverse_reaction_event.v1",
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Manifestation"
+                                        },
+                                        "archetype_node_id": "at0006",
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "Anaphylaxis",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "http://snomed.info/sct"
+                                                },
+                                                "code_string": "30579001"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "_type": "EVALUATION",
+                    "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Adverse reaction risk #2"
+                    },
+                    "archetype_details": {
+                        "_type": "ARCHETYPED",
+                        "archetype_id": {
+                            "_type": "ARCHETYPE_ID",
+                            "value": "openEHR-EHR-EVALUATION.adverse_reaction_risk.v2"
+                        },
+                        "rm_version": "1.1.0"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.adverse_reaction_risk.v2",
+                    "language": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "ISO_639-1"
+                        },
+                        "code_string": "en"
+                    },
+                    "encoding": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "IANA_character-sets"
+                        },
+                        "code_string": "UTF-8"
+                    },
+                    "subject": {
+                        "_type": "PARTY_SELF"
+                    },
+                    "data": {
+                        "_type": "ITEM_TREE",
+                        "name": {
+                            "_type": "DV_TEXT",
+                            "value": "Tree"
+                        },
+                        "archetype_node_id": "at0001",
+                        "items": [
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Substance"
+                                },
+                                "archetype_node_id": "at0002",
+                                "value": {
+                                    "_type": "DV_CODED_TEXT",
+                                    "value": "Ragweed pollen",
+                                    "mappings": [
+                                        {
+                                            "_type": "TERM_MAPPING",
+                                            "match": "=",
+                                            "target": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "http://www.whocc.no/atc"
+                                                },
+                                                "code_string": "J01CA"
+                                            }
+                                        }
+                                    ],
+                                    "defining_code": {
+                                        "_type": "CODE_PHRASE",
+                                        "terminology_id": {
+                                            "_type": "TERMINOLOGY_ID",
+                                            "value": "http://snomed.info/sct"
+                                        },
+                                        "code_string": "256303006"
+                                    }
+                                }
+                            },
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Active/inactive status"
+                                },
+                                "archetype_node_id": "at0130",
+                                "value": {
+                                    "_type": "DV_CODED_TEXT",
+                                    "value": "Inactive",
+                                    "defining_code": {
+                                        "_type": "CODE_PHRASE",
+                                        "terminology_id": {
+                                            "_type": "TERMINOLOGY_ID",
+                                            "value": "local"
+                                        },
+                                        "code_string": "at0132"
+                                    }
+                                }
+                            },
+                            {
+                                "_type": "ELEMENT",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Verification status"
+                                },
+                                "archetype_node_id": "at0063",
+                                "value": {
+                                    "_type": "DV_CODED_TEXT",
+                                    "value": "Unconfirmed",
+                                    "defining_code": {
+                                        "_type": "CODE_PHRASE",
+                                        "terminology_id": {
+                                            "_type": "TERMINOLOGY_ID",
+                                            "value": "local"
+                                        },
+                                        "code_string": "at0064"
+                                    }
+                                }
+                            },
+                            {
+                                "_type": "CLUSTER",
+                                "name": {
+                                    "_type": "DV_TEXT",
+                                    "value": "Adverse reaction event"
+                                },
+                                "archetype_details": {
+                                    "_type": "ARCHETYPED",
+                                    "archetype_id": {
+                                        "_type": "ARCHETYPE_ID",
+                                        "value": "openEHR-EHR-CLUSTER.adverse_reaction_event.v1"
+                                    },
+                                    "rm_version": "1.1.0"
+                                },
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.adverse_reaction_event.v1",
+                                "items": [
+                                    {
+                                        "_type": "ELEMENT",
+                                        "name": {
+                                            "_type": "DV_TEXT",
+                                            "value": "Manifestation"
+                                        },
+                                        "archetype_node_id": "at0006",
+                                        "value": {
+                                            "_type": "DV_CODED_TEXT",
+                                            "value": "Wheeze - ronchi",
+                                            "defining_code": {
+                                                "_type": "CODE_PHRASE",
+                                                "terminology_id": {
+                                                    "_type": "TERMINOLOGY_ID",
+                                                    "value": "http://snomed.info/sct"
+                                                },
+                                                "code_string": "24612001"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
