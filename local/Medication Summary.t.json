@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "efdcab5129bffe2a9750e45540556b93",
+      "MD5-CAM-1.0.1" : "c8e99b3315bf3e164fed45070845a022",
       "PARENT:MD5-CAM-1.0.1" : "03778F98B6DF455040F12E3E2F1BF4A9",
-      "sem_ver" : "1.0.0-alpha.5",
+      "sem_ver" : "1.0.0-alpha.6",
       "build_uid" : ""
     },
     "details" : {
@@ -233,7 +233,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..0",
+        "occurrences" : "0..1",
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -251,7 +251,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..0",
         "nodeId" : "at0.5",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -4217,7 +4217,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "AA0BE8C0835250EE579F834B51A6633C"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.",
+          "keywords" : [ "Aussage", "Momentaufnahme" ],
+          "use" : "Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.\r\n\r\nIn diesem Zusammenhang beschreibt der Begriff \"Medikamente\" eine breite Palette von Gegenständen, die verschrieben oder \"rezeptfrei\" erworben werden können. Dazu gehören:\r\n- einen einzelnen pharmazeutischen Artikel oder Wirkstoff; \r\n- eine Magistralrezeptur; \r\n- ein Kombinationspräparat; \r\n- ein Nahrungsergänzungsmittel; oder \r\n- ein anderer therapeutischer Artikel, der zur Behandlung oder Vorbeugung von Krankheiten verwendet wird, wie z. B. ein Verband oder eine Wundauflage, die ein antimikrobielles Mittel enthält.\r\n\r\nEs wird davon ausgegangen, dass dieser Archetyp üblicherweise in einem Austauschkontext verwendet wird, z. B. als Teil eines Gesundheitsberichts oder eines Berichts über den Übergang der Versorgung, wobei eine oder mehrere Instanzen dieser Datengruppe verwendet werden können, um eine \"Aktuelle Medikamentenliste\" darzustellen. Zum Beispiel: \r\n- bei der Aufnahme ins Krankenhaus;\r\n- als Teil einer fachärztlichen Überweisung; oder\r\n- als Grundlage für eine Überprüfung der Medikation.\r\n\r\nDie Informationsquelle kann eine Person, ihr Betreuer oder ein Kliniker sein.\r\n\r\nDieser Archetyp wurde so konzipiert, dass er möglichst mit INSTRUCTION.medictation oder ACTION.medication_management übereinstimmt. Er wurde jedoch so eingeschränkt, dass er nur wesentliche Informationen enthält, die für den Austausch oder die Zusammenfassung erforderlich sind, sowie zusätzliche ereignisbasierte Datenelemente wie das Datenelement \"Zuletzt verabreicht\", um einen nahtlosen Übergang der Versorgung zu unterstützen. \r\n\r\nFür jedes Medikament oder jede Kombinationspackung ist eine Instanz dieses Archetyps zu erfassen. Wenn dasselbe Medikament in verschiedenen Dosierungen oder mit unterschiedlicher Häufigkeit verwendet wird, sollte jede einzelne Dosierungs- und Häufigkeitsänderung als separate Instanz erfasst werden.\r\n\r\nDieser Archetyp sollte nur zum Zeitpunkt der Erstellung als aktuell betrachtet werden. \r\n\r\nDieser Archetyp wurde so konzipiert, dass er mit der FHIR-Ressource MedicationStatement übereinstimmt, ist aber absichtlich auf die \"aktuelle Verwendung\" und nicht auf die vergangene oder zukünftige Verwendung beschränkt.\r\n",
+          "misuse" : "Nicht für die Aufzeichnung von zusammenfassenden oder dauerhaften Informationen über die frühere Einnahme eines Medikaments zu verwenden - verwenden Sie zu diesem Zweck EVALUATION.medication_summary.\r\n\r\nNicht zur Aufzeichnung von Details über eine Medikamentenverfügung verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.medication_order.\r\n\r\nNicht zur Aufzeichnung von Details über bestimmte medikamentenbezogene Aktivitäten, wie Verabreichung oder Abgabe, zu verwenden - verwenden Sie zu diesem Zweck ACTION.medication.\r\n\r\nNicht zur Erstellung eines Frameworks zum Aufzeichnen von Antworten auf vordefinierte Screening-Fragen zur Verwendung eines bestimmten Medikaments oder einer Medikamentengruppe geeignet. Verwenden Sie zu diesem Zweck OBSERVATION.medication_screening.\r\n\r\nNicht für die Darstellung einer verabreichten Impfung zu verwenden - verwenden Sie zu diesem Zweck einen geeigneten Archetyp.\r\n\r\nNicht zu verwenden, um Informationen über verwendete oder implantierte medizinische Geräte zu erfassen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.",
+          "keywords" : [ "utsagn", "snapshot" ],
+          "use" : "Brukes for å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.\r\n\r\nI denne av denne arketypen brukes en bred definisjon av \"legemiddel\", og omhandler både legemidler på og uten resept. Dette inkluderer:\r\n- et enkelt farmasøytisk produkt eller middel;\r\n- en tilberedning;\r\n- et kombinasjonsprodukt;\r\n- et ernæringsprodukt; eller\r\n- et annet terapeutisk produkt brukt til å behandle eller forebygge sykdom, for eksempel en bandasje med et antimikrobielt middel.\r\n\r\nDenne arketypen vil vanligvis bli brukt ved utveksling av informasjon, for eksempel som en del av en helseoppsummering eller en oppsummering ved overflytting mellom helseinstitusjoner. I slike tilfeller kan en eller flere instanser av denne arketypen brukes til å representere en \"Nåværende medikamentliste\". For eksempel:\r\n- ved innleggelse på sykehus,\r\n- som en del av en spesialisthenvisning,\r\n- som grunnlag for en medikamentgjennomgang.\r\n\r\nKilden til informasjon kan være en person, deres omsorgsperson eller en kliniker.\r\n\r\nDenne arketypen er utformet for å kunne samsvare med INSTRUCTION.medication_order (Legemiddelordinering) eller ACTION.medication (Legemiddelhåndtering) ved behov. Imidlertid er arketypen begrenset til å kun representere essensiell informasjon som er nødvendig for utveksling eller oppsummeringsformål, i tillegg til hendelsesbaserte dataelementer som \"Sist administrert\". Dette er gjort for å støtte en sømløs omsorgsovergang.\r\n\r\nRegistrer én forekomst av denne arketypen per legemiddel eller kombinasjonspakke. Brukes samme legemiddel i ulike doser eller dosefrekvenser, skal hver unike doserings- og frekvensvariasjon registreres som en separat forekomst.\r\n\r\nDenne arketypen bør bare betraktes som oppdatert på registreringstidspunktet.\r\n\r\nDenne arketypen er utformet for å samsvare med FHIR MedicationStatement-ressursen, men er bevisst begrenset til \"nåværende bruk\", og ikke for tidligere eller fremtidig bruk av et legemiddel.",
+          "misuse" : "Brukes ikke for å registrere et sammendrag om all bruk av et spesifisert legemiddel over et individs livstid, bruk arketypen EVALUATION.medication_summary (Legemiddelsammendrag) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere forordningen av et legemiddel - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere administreringen av et legemiddel - bruk arketypen ACTION.medication (Legemiddelhåndtering) til dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilket som helst legemiddel eller gruppe av legemidler. Bruk OBSERVATION.medication_screening (Kartleggingsspørsmål om legemidler) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere en vaksine som er administrert - bruk en egnet arketype til dette formålet.\r\n\r\nBrukes ikke for å registrere infomrasjon om medisinsk utstyr som er brukt eller implantert. Bruk en egnet arketype til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record an assertion about the current use of a single medication by an individual at a specified point in time.",
+          "keywords" : [ "statement", "snapshot" ],
+          "use" : "Use to record an assertion about the current use of a single medication by an individual at a specified point in time.\r\n\r\nIn this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:\r\n- a single pharmaceutical item or agent; \r\n- an extemporaneous preparation; \r\n- a combination therapy product; \r\n- a nutritional product; or \r\n- another therapeutic item used to treat or prevent disease, such as a bandage or dressing containing an antimicrobial agent.\r\n\r\nIt is anticipated that this archetype will commonly be used within an exchange context, for example as part of a health summary or transition of care summary, where one or more instances of this data group may be used to represent a ‘Current medication list’. For example: \r\n- on admission to hospital;\r\n- as part of a specialist referral; or\r\n- as the basis for a medication review.\r\n\r\nThe source of information may be an individual, their carer or a clinician.\r\n\r\nThis archetype has been designed to align with INSTRUCTION.medictation or ACTION.medication_management, where possible. However, it has been constrained to represent only essential information necessary for exchange or summary purposes, plus the addition of event-based data elements such as the ‘Last administered’ data element to support a seamless transition of care. \r\n\r\nRecord one instance of this archetype per medication or combination pack. If the same medication is being used in different dose amounts or varying dose frequencies, each unique dosage and frequency variation should be recorded as a separate instance.\r\n\r\nThis archetype should only be considered up-to-date at the time of authoring. \r\n\r\nThis archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use.",
+          "misuse" : "Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used to record details about specific medication related activities, such as administration or dispensing - use ACTION.medication for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications - use OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record information about medical devices that are used or implanted.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record an assertion about the current use of a single medication by an individual at a specified point in time. (en)",
+          "keywords" : [ "*statement (en)", "*snapshot (en)" ],
+          "use" : "*Use to record an assertion about the current use of a single medication by an individual at a specified point in time.\r\n\r\nIn this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:\r\n- a single pharmaceutical item or agent; \r\n- an extemporaneous preparation; \r\n- a combination therapy product; \r\n- a nutritional product; or \r\n- another therapeutic item used to treat or prevent disease, such as a bandage or dressing containing an antimicrobial agent.\r\n\r\nIt is anticipated that this archetype will commonly be used within an exchange context, for example as part of a health summary or transition of care summary, where one or more instances of this data group may be used to represent a ‘Current medication list’.  For example: \r\n- on admission to hospital;\r\n- as part of a specialist referral; or\r\n- as the basis for a medication review.\r\n\r\nThe source of information may be an individual, their carer or a clinician.\r\n\r\nThis archetype has been designed to align with INSTRUCTION.medictation or ACTION.medication_management, where possible. However, it has been constrained to represent only essential information necessary for exchange or summary purposes, plus the addition of event-based data elements such as the ‘Last administered’ data element to support a seamless transition of care. \r\n\r\nRecord one instance of this archetype per medication or combination pack. If the same medication is being used in different dose amounts or varying dose frequencies, each unique dosage and frequency variation should be recorded as a separate instance.\r\n\r\nThis archetype should only be considered up-to-date at the time of authoring. \r\n\r\nThis archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use. (en)",
+          "misuse" : "*Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used to record details about specific medication related activities, such as administration or dispensing - use ACTION.medication for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications - use OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record information about medical devices that are used or implanted. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.medication_statement.v0",
     "differential" : true,
@@ -4381,7 +4443,129 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "301D939F428B1A2F46DDE641AAFC47E5"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Details eines Arzneimittels oder einer Komponente eines Arzneimittels, einschließlich der Wirkstärke, der Darreichungsform und den Details über bestimmte Inhaltsstoffe.",
+          "keywords" : [ "Arzneimittel", "Medikament", "Verordnung", "Verschreibung", "Rezept", "ein Rezept ausstellen", "Therapie", "Substanz", "Stoff", "Arznei", "Therapeutikum", "Wirkstoff", "Heilmittel", "ad-hoc", "ad hoc", "Rezeptur", "Zusammensetzung", "Medizin", "Pharmakon" ],
+          "use" : "Zur Darstellung von Angaben zu einem Arzneimittel oder einer Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und den Angaben über spezielle Inhaltsstoffe.\r\n\r\nDieser Archetyp soll für die Darstellung von Angaben zu einem Arzneimittel oder einer Arzneimittelkomponente verwendet werden. Dabei sollen vor allem die Darreichungsform und die Inhaltsstoffe detailliert beschrieben werden, z.B. zu einer Infusion oder einer Ad-hoc-Mixtur oder wenn es zu einem Arzneimittel keine Terminologie zur Verfügung steht. Im Rahmen einer Verordnung oder Abgabe eines Arzneimittels kann dieser Archetyp in den SLOT \"Arzneimitteldetails\" innerhalb des INSTRUCTION.medication_order Archetyps eingebettet werden. Für die Darstellung einer gegenwärtigen Verabreichung, Abgabe oder Anwendung eines Arzneimittels muss dieser Archetyp innerhalb des SLOTs \"Arzneimitteldetails\" in den Archetyp ACTION.medication eingefügt werden.\r\n\r\nDieser Archetyp kann überflüssig sein, wenn die Verordnung eines verschreibungsfähigen Arzneimittels eine Terminologie zur Identifizierung des Arzneimittelproduktes verwendet. In diesem Fall kann der Marken- oder Produktname Informationen über die Darreichungsform und die Wirkstärke der Stoffe beinhalten.\r\n",
+          "misuse" : "Nicht für die Kontrolle des Apothekenbestands oder zur Verwaltung von Arzneimittellisten verwenden.\r\n\r\nNicht zur Darstellung einer beabsichtigten oder verabreichten Dosis eines Arzneimittels einsetzen. Für diesen Zweck müssen die Archetypen INSTRUCTION.medication_order oder CLUSTER.dosage verwendet werden.\r\n\r\nDarf nicht allein zum Ausfüllen einer Medikamentenliste verwendet werden. Verwenden Sie dazu einen relevanten medikamentenbezogenen ENTRY-Archetyp wie INSTRUCTION.medication_order oder ACTION.medication.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För att registrera information om ett läkemedel eller en läkemedelskomponent, inklusive styrka, beredning och detaljer om specifika beståndsdelar.",
+          "keywords" : [ "medicinering", "beställning", "terapi", "substans", "drog", "terapeutisk", "terapeutisk framgång", "situationsanpassad", "apoteks tillverkad produkt", "läkemedelsberedning", "läkemedel" ],
+          "use" : "Används för att registrera detaljer om ett läkemedel eller en komponent i ett läkemedel, inklusive styrka, beredning och detaljer om specifika beståndsdelar.\r\n\r\nDenna arketyp är avsedd att användas för att registrera detaljer om ett läkemedel eller en komponent i ett läkemedel där beredningen och enskilda ingredienser i läkemedlet behöver specificeras mer, till exempel för infusioner och situationsanpassade blandningar, eller där det inte finns någon läkemedelsterminologi tillgänglig. I samband med en beställning för administrering eller dispensering av ett läkemedel, kan denna arketyp kapslas i in i fältet SLOT\" Medicin detaljer\" som finns i arketypen INSTRUCTION.medication_order. För att kunna registrera den faktiska administreringen eller dispenseringen av ett läkemedel, kan denna arketyp kapslas in i fältet SLOT \"Medicin detaljer\" i arketypen ACTION.medication .\r\n\r\nDenna arketyp kan vara överflödig i situationer där beställningen av läkemedlet sker via recept där det används en terminologi för att identifiera läkemedelsobjektet. I dessa fall kan varumärket eller produktnamnet identifiera ämnets beredning och styrka. \r\n",
+          "misuse" : "Får inte användas för lagerkontroll på apotek eller inom läkemedelskataloger.\r\n\r\nFår inte användas för att registrera den avsedda eller administrerade dosen av ett läkemedel. Använd då istället antingen arketypen INSTRUCTION.medication_order eller CLUSTER.dosage för detta ändamål.\r\n\r\nFår inte användas ensamt för att fylla i en läkemedelslista. Använd då istället en relevant läkemedelsrelaterad ENTRY-arketyp som INSTRUCTION.medication_order eller ACTION.medication för detta ändamål.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt"
+          },
+          "purpose" : "Para registrar detalhes de uma preparação de medicamentos, incluindo, quando necessário, detalhes de múltiplos ingredientes, no contexto de uma infusão ou preparação ad-hoc (manipulada). A maioria das prescrições baseadas em dose terá sua precisa preparação determinada pelo estoque disponível na unidade, ou pelo fornecimento de farmácia, enquanto que, com a prescrição baseada em produtos, o nome da medicação traz detalhes da forma e concentração da preparação.",
+          "keywords" : [ "medicação", "ordem", "prescrever", "terapia", "substância", "droga", "terapêutico", "venda livre", "ítem terapêutico", "Ad hoc", "manipulados" ],
+          "use" : "*Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the Preparation details SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance. (en)",
+          "misuse" : "*Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.",
+          "keywords" : [ "legemiddel", "tilbereding", "ordinering", "forskrive", "terapi", "substans", "medikament", "terapeutisk", "medikamenter solgt over disk", "vare", "magistrell", "ex tempore", "blanding", "virkestoff", "hjelpestoff", "utblanding", "foreskrive", "forordne" ],
+          "use" : "Brukes for å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.\r\n\r\nDenne arketypen er laget for å brukes til å registrere detaljer om et legemiddel eller en komponent av et legemiddel, der formen og detaljer om bestanddelene må oppgis i mer detalj. Eksempler kan være infusjoner og magistrellforskrevne blandinger, eller der det ikke finnes en tilgjengelig legemiddelterminologi. I sammenhenger der et legemiddel skal administreres eller ekspederes skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen INSTRUCTION.medication_order. I sammenhenger der det skal registreres hvilket legemiddel som faktisk ble administrert eller ekspedert skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen ACTION.medication.\r\n\r\nDenne arketypen kan være overflødig i situasjoner der en legemiddelordinering via resept bruker terminologi for å spesifisere legemiddelet. I slike tilfeller vil ofte form og styrke være angitt som en del av terminologibegrepet.",
+          "misuse" : "Skal ikke brukes innen varelageroversikt for apotek, eller innen legemiddelkataloger.\r\n\r\nSkal ikke brukes for å registrere den tilsiktede eller administrerte dosen av et legemiddel. Bruk enten INSTRUCTION.medication_order eller CLUSTER.dosage til dette formålet.\r\n\r\nSkal ikke brukes alene for å populere en legemiddelliste. Bruk en relevant legemiddel-relatert ENTRY-arketype som INSTRUCTION.medication_order eller ACTION.medication for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a medication or component of a medication, including strength, form and details of any specific constituents.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "ad-hoc", "adhoc", "ad hoc", "extemporaneous", "formulation", "medicine" ],
+          "use" : "Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the 'Medication details' SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance.",
+          "misuse" : "Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Het vastleggen van gegevens over een medicament of een onderdeel van een medicament, inclusief sterkte, vorm en details van een specifiek bestandsdeel.",
+          "keywords" : [ "medicatie", "recept", "voorschrijven", "behandeling", "substantie", "medicament", "therapeuticum", "therapeutische substantie", "ad-hoc", "adhoc", "ad hoc", "medicijn" ],
+          "use" : "*Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the Preparation details SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance. (en)",
+          "misuse" : "*Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar detalls sobre un medicament o un component d'un medicament, inclosa la concentració, la forma i els detalls de qualsevol component específic.",
+          "keywords" : [ "medicació", "ordre", "prescriure", "teràpia", "substància", "medicament", "terapèutic", "bé terapèutic", "ad-hoc", "adhoc", "ad hoc", "extemporani", "formulació", "medicina" ],
+          "use" : "S'utilitza per registrar detalls sobre un medicament o un component d'un medicament, inclosa la concentració, la forma i els detalls de qualsevol component específic.\r\n\r\nAquest arquetip està pensat per registrar detalls d'un medicament o component d'un medicament quan calgui especificar amb més detall la forma i els components detallats del medicament, per exemple infusions i barreges ad hoc, o quan no es disposi de terminologia de medicaments. En el context d'una ordre d'administració o dispensació d'un medicament, anideu aquest arquetip al SLOT \"Detalls del medicament\" dins de l'arquetip INSTRUCTION.medication_order. En el context del registre de l'administració o dispensació real d'un medicament, anideu aquest arquetip al SLOT \"Detalls del medicament\" dins de l'arquetip ACTION.medication.\r\n\r\nAquest arquetip pot ser redundant en situacions en què la sol·licitud dun medicament mitjançant recepta faci ús duna terminologia per identificar larticle. En aquest cas, la marca o el nom del producte poden identificar la forma i la concentració de la substància.",
+          "misuse" : "No s'ha de fer servir per portar el control de l'estoc de farmàcia ni dels catàlegs de medicaments.\r\n\r\nNo s'ha de fer servir per registrar la dosi prevista o administrada d'un medicament. Per fer-ho, utilitzeu els arquetips INSTRUCTION.medication_order o CLUSTER.dosage.\r\n\r\nNo s'ha de fer servir per si mateix per emplenar una llista de medicació. Per fer-ho, utilitzeu un arquetip de tipus ENTRY relacionat amb la medicació, com INSTRUCTION.medication_order o ACTION.medication.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar datos sobre un medicamento o componente de un medicamento, incluida la dosis, la forma y los detalles de cualquier componente específico.",
+          "keywords" : [ "medicación", "prescripción", "prescribir", "terapia", "substancia", "droga", "fármaco", "terapéutico", "producto terapéutico", "ad-hoc", "ad hoc", "extemporáneo", "formulación", "medicina" ],
+          "use" : "Usar para registrar detalles sobre un medicamento o componente de un medicamento, incluyendo la dosis, la forma y los detalles de cualquier componente específico.\r\n\r\nEste arquetipo está diseñado para registrar datos de un medicamento o de un componente del mismo cuando se necesite especificar con mayor detalle la forma y los componentes del medicamento. Por ejemplo, en el caso de infusiones, mezclas preparadas ad hoc, o cuando no se disponga de una terminología estandarizada de medicamentos.\r\n\r\nEn el contexto de una prescripción, administración o dispensación de un medicamento, este arquetipo debe ubicarse dentro del SLOT «Datos de la medicación» del arquetipo INSTRUCTION.medication_order. En el caso del registro de la administración o dispensación real del medicamento, se debe ubicar dentro del SLOT «Datos de la medicación» del arquetipo ACTION.medication.\r\n\r\nEste arquetipo puede resultar redundante en situaciones donde se solicite un medicamento mediante una prescripción que utiliza una terminología codificada para identificar el medicamento. En estos casos, la marca o el nombre del producto ya pueden implicar la forma farmacéutica y la concentración de la sustancia.\r\n\r\n",
+          "misuse" : "No utilizar para el control del inventario de farmacia ni dentro de los catálogos de medicamentos.\r\n\r\nNo utilizar para registrar la dosis prevista o administrada de un medicamento. Utilizar los arquetipos INSTRUCTION.medication_order o CLUSTER.dosage para esta finalidad.\r\n\r\nNo utilizar por sí mismo para rellenar una lista de medicación. Utilizar un arquetipo relevante de tipo ENTRY relacionado con la medicación, como INSTRUCTION.medication_order o ACTION.medication para esta finalidad.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication.v2",
     "differential" : true,
@@ -4685,7 +4869,51 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1DD45E6F93C5A6053EFF486B1C98627D"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung einer Gesamtübersicht über den Status und die wichtigsten Daten einer Arzneimittelverordnung.",
+          "keywords" : [ ],
+          "use" : "Zur Verwendung im Kontext einer Arzneimittelverordnung, wenn eine Zusammenfassung der Gesamtaverordnung erforderlich ist. Dies ist in der Regel dann der Fall, wenn die Verordnung im Rahmen einer Medikamentenübersichtsliste verwendet wird und nicht im Rahmen einer tatsächlichen Verschreibung inklusive Rezept, bei dem in der Regel der Status der Verordnung und weitere wichtige Datumsinformationen im Archetypen Arzneimittelanwendung enthalten sind.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para fornecer um resumo geral do status e datas-chave de uma prescrição.",
+          "keywords" : [ ],
+          "use" : "Utilizar no contexto de uma INSTRUCTION de medicamentos, onde é necessário um resumo do esquema medicamentoso. Normalmente ocorre onde a prescrição está sendo utilizada, no contexto de oferecer uma lista de resumo do esquema medicamentoso. Não se aplica no registro de uma prescrição.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide an overall summary of the status and key dates, related to a medication order.",
+          "keywords" : [ ],
+          "use" : "Use within the context of a medication order instruction where a summary of the overall order is required. This will normally be where the order is is being used within the context of a medicaton summary list, and not in the context of an orderable prescription record, where medication ctions will normally carry the primary record of the status of the order and key date information.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_order_summary.v0",
     "differential" : true,
