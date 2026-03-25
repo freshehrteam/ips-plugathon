@@ -4,10 +4,6 @@
         "_type": "DV_TEXT",
         "value": "Allergies and Intolerances"
     },
-    "uid": {
-        "_type": "OBJECT_VERSION_ID",
-        "value": "e3a2a8d9-45db-4104-83ea-58161be59769::7815d0e1-7902-453c-835a-f2a57c5dfe57::1"
-    },
     "archetype_details": {
         "_type": "ARCHETYPED",
         "archetype_id": {
@@ -137,7 +133,7 @@
                                 "scheme": "Practitioner"
                             },
                             "namespace": "http://hl7.org/fhir",
-                            "type": "ANY"
+                            "type": "PARTY"
                         },
                         "name": "Dr. Mark Antonio"
                     },
@@ -268,7 +264,7 @@
                     "_type": "EVALUATION",
                     "name": {
                         "_type": "DV_TEXT",
-                        "value": "Adverse reaction risk #2"
+                        "value": "Adverse reaction risk"
                     },
                     "archetype_details": {
                         "_type": "ARCHETYPED",

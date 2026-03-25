@@ -5,18 +5,14 @@
         "value": "Problem List"
     },
     "archetype_details": {
-        "_type": "ARCHETYPED",
         "archetype_id": {
-            "_type": "ARCHETYPE_ID",
             "value": "openEHR-EHR-COMPOSITION.problem_list.v2"
         },
         "template_id": {
-            "_type": "TEMPLATE_ID",
             "value": "IPS - Problem List"
         },
         "rm_version": "1.1.0"
     },
-    "archetype_node_id": "openEHR-EHR-COMPOSITION.problem_list.v2",
     "language": {
         "_type": "CODE_PHRASE",
         "terminology_id": {
@@ -76,14 +72,11 @@
                 "value": "Problem List"
             },
             "archetype_details": {
-                "_type": "ARCHETYPED",
                 "archetype_id": {
-                    "_type": "ARCHETYPE_ID",
                     "value": "openEHR-EHR-SECTION.adhoc.v1"
                 },
                 "rm_version": "1.1.0"
             },
-            "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1",
             "items": [
                 {
                     "_type": "EVALUATION",
@@ -91,19 +84,12 @@
                         "_type": "DV_TEXT",
                         "value": "Problem/Diagnosis"
                     },
-                    "uid": {
-                        "_type": "HIER_OBJECT_ID",
-                        "value": "9c67172d-69af-4941-b677-14b34efc016f"
-                    },
                     "archetype_details": {
-                        "_type": "ARCHETYPED",
                         "archetype_id": {
-                            "_type": "ARCHETYPE_ID",
                             "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
                         },
                         "rm_version": "1.1.0"
                     },
-                    "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
                     "language": {
                         "_type": "CODE_PHRASE",
                         "terminology_id": {
@@ -127,13 +113,13 @@
                         "_type": "PARTY_IDENTIFIED",
                         "external_ref": {
                             "_type": "PARTY_REF",
+                            "namespace": "http://hl7.org/fhir",
+                            "type": "PARTY",
                             "id": {
                                 "_type": "GENERIC_ID",
                                 "value": "eumfh-39-07",
                                 "scheme": "Practitioner"
-                            },
-                            "namespace": "http://hl7.org/fhir",
-                            "type": "PARTY"
+                            }
                         },
                         "name": "Dr. Mark Antonio"
                     },
@@ -143,7 +129,6 @@
                             "_type": "DV_TEXT",
                             "value": "structure"
                         },
-                        "archetype_node_id": "at0001",
                         "items": [
                             {
                                 "_type": "ELEMENT",
@@ -151,7 +136,6 @@
                                     "_type": "DV_TEXT",
                                     "value": "Problem/Diagnosis name"
                                 },
-                                "archetype_node_id": "at0002",
                                 "value": {
                                     "_type": "DV_CODED_TEXT",
                                     "value": "Acute myeloid leukemia",
@@ -163,7 +147,8 @@
                                         },
                                         "code_string": "91861009"
                                     }
-                                }
+                                },
+                                "archetype_node_id": "at0002"
                             },
                             {
                                 "_type": "ELEMENT",
@@ -171,11 +156,11 @@
                                     "_type": "DV_TEXT",
                                     "value": "Date/time of onset"
                                 },
-                                "archetype_node_id": "at0077",
                                 "value": {
                                     "_type": "DV_DATE_TIME",
                                     "value": "2014"
-                                }
+                                },
+                                "archetype_node_id": "at0077"
                             },
                             {
                                 "_type": "CLUSTER",
@@ -184,14 +169,11 @@
                                     "value": "Problem/Diagnosis qualifier"
                                 },
                                 "archetype_details": {
-                                    "_type": "ARCHETYPED",
                                     "archetype_id": {
-                                        "_type": "ARCHETYPE_ID",
                                         "value": "openEHR-EHR-CLUSTER.problem_qualifier.v2"
                                     },
                                     "rm_version": "1.1.0"
                                 },
-                                "archetype_node_id": "openEHR-EHR-CLUSTER.problem_qualifier.v2",
                                 "items": [
                                     {
                                         "_type": "ELEMENT",
@@ -199,7 +181,6 @@
                                             "_type": "DV_TEXT",
                                             "value": "Active/Inactive?"
                                         },
-                                        "archetype_node_id": "at0003",
                                         "value": {
                                             "_type": "DV_CODED_TEXT",
                                             "value": "Active",
@@ -211,9 +192,11 @@
                                                 },
                                                 "code_string": "at0026"
                                             }
-                                        }
+                                        },
+                                        "archetype_node_id": "at0003"
                                     }
-                                ]
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.problem_qualifier.v2"
                             },
                             {
                                 "_type": "ELEMENT",
@@ -221,7 +204,6 @@
                                     "_type": "DV_TEXT",
                                     "value": "Diagnostic certainty"
                                 },
-                                "archetype_node_id": "at0073",
                                 "value": {
                                     "_type": "DV_CODED_TEXT",
                                     "value": "Confirmed",
@@ -233,30 +215,30 @@
                                         },
                                         "code_string": "at0076"
                                     }
-                                }
+                                },
+                                "archetype_node_id": "at0073"
                             }
-                        ]
+                        ],
+                        "archetype_node_id": "at0001"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+                    "uid": {
+                        "_type": "HIER_OBJECT_ID",
+                        "value": "9c67172d-69af-4941-b677-14b34efc016f"
                     }
                 },
                 {
                     "_type": "EVALUATION",
                     "name": {
                         "_type": "DV_TEXT",
-                        "value": "Problem/Diagnosis #2"
-                    },
-                    "uid": {
-                        "_type": "HIER_OBJECT_ID",
-                        "value": "ac67172d-69af-4941-b677-14b34efc016f"
+                        "value": "Problem/Diagnosis"
                     },
                     "archetype_details": {
-                        "_type": "ARCHETYPED",
                         "archetype_id": {
-                            "_type": "ARCHETYPE_ID",
                             "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
                         },
                         "rm_version": "1.1.0"
                     },
-                    "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
                     "language": {
                         "_type": "CODE_PHRASE",
                         "terminology_id": {
@@ -280,13 +262,13 @@
                         "_type": "PARTY_IDENTIFIED",
                         "external_ref": {
                             "_type": "PARTY_REF",
+                            "namespace": "http://hl7.org/fhir",
+                            "type": "PARTY",
                             "id": {
                                 "_type": "GENERIC_ID",
                                 "value": "eumfh-39-07",
                                 "scheme": "Practitioner"
-                            },
-                            "namespace": "http://hl7.org/fhir",
-                            "type": "PARTY"
+                            }
                         },
                         "name": "Dr. Mark Antonio"
                     },
@@ -296,7 +278,6 @@
                             "_type": "DV_TEXT",
                             "value": "structure"
                         },
-                        "archetype_node_id": "at0001",
                         "items": [
                             {
                                 "_type": "ELEMENT",
@@ -304,7 +285,6 @@
                                     "_type": "DV_TEXT",
                                     "value": "Problem/Diagnosis name"
                                 },
-                                "archetype_node_id": "at0002",
                                 "value": {
                                     "_type": "DV_CODED_TEXT",
                                     "value": "Asthma",
@@ -316,7 +296,8 @@
                                         },
                                         "code_string": "195967001"
                                     }
-                                }
+                                },
+                                "archetype_node_id": "at0002"
                             },
                             {
                                 "_type": "ELEMENT",
@@ -324,11 +305,11 @@
                                     "_type": "DV_TEXT",
                                     "value": "Date/time of onset"
                                 },
-                                "archetype_node_id": "at0077",
                                 "value": {
                                     "_type": "DV_DATE_TIME",
                                     "value": "2008-01-01T00:00:00Z"
-                                }
+                                },
+                                "archetype_node_id": "at0077"
                             },
                             {
                                 "_type": "CLUSTER",
@@ -337,14 +318,11 @@
                                     "value": "Problem/Diagnosis qualifier"
                                 },
                                 "archetype_details": {
-                                    "_type": "ARCHETYPED",
                                     "archetype_id": {
-                                        "_type": "ARCHETYPE_ID",
                                         "value": "openEHR-EHR-CLUSTER.problem_qualifier.v2"
                                     },
                                     "rm_version": "1.1.0"
                                 },
-                                "archetype_node_id": "openEHR-EHR-CLUSTER.problem_qualifier.v2",
                                 "items": [
                                     {
                                         "_type": "ELEMENT",
@@ -352,7 +330,6 @@
                                             "_type": "DV_TEXT",
                                             "value": "Active/Inactive?"
                                         },
-                                        "archetype_node_id": "at0003",
                                         "value": {
                                             "_type": "DV_CODED_TEXT",
                                             "value": "Inactive",
@@ -364,9 +341,11 @@
                                                 },
                                                 "code_string": "at0027"
                                             }
-                                        }
+                                        },
+                                        "archetype_node_id": "at0003"
                                     }
-                                ]
+                                ],
+                                "archetype_node_id": "openEHR-EHR-CLUSTER.problem_qualifier.v2"
                             },
                             {
                                 "_type": "ELEMENT",
@@ -374,7 +353,6 @@
                                     "_type": "DV_TEXT",
                                     "value": "Diagnostic certainty"
                                 },
-                                "archetype_node_id": "at0073",
                                 "value": {
                                     "_type": "DV_CODED_TEXT",
                                     "value": "Confirmed",
@@ -386,12 +364,21 @@
                                         },
                                         "code_string": "at0076"
                                     }
-                                }
+                                },
+                                "archetype_node_id": "at0073"
                             }
-                        ]
+                        ],
+                        "archetype_node_id": "at0001"
+                    },
+                    "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+                    "uid": {
+                        "_type": "HIER_OBJECT_ID",
+                        "value": "bc67172d-69af-4941-b677-14b34efc016f"
                     }
                 }
-            ]
+            ],
+            "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
         }
-    ]
+    ],
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.problem_list.v2"
 }
