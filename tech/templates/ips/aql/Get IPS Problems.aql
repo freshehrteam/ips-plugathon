@@ -1,0 +1,5 @@
+SELECT a as Problem,
+    FROM EHR e[ehr_id/value = '{{ehrId}}']
+    CONTAINS COMPOSITION c
+    CONTAINS EVALUATION a[openEHR-EHR-EVALUATION.problem_diagnosis.v1] 
+   WHERE c/name/value = 'Problem List'
